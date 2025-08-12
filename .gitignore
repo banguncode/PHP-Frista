@@ -1,0 +1,38 @@
+# Vendor directory (library dependency)
+vendor/
+
+# Composer autoload file
+composer.lock
+
+# Cache and log files
+*.log
+*.cache
+*.tmp
+
+# Environment files (if any)
+.env
+.env.local
+.env.*.local
+
+# IDE and editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Build or distribution files (if any)
+build/
+dist/
+
+# PHPUnit cache file
+.phpunit.result.cache
+
+# Coverage testing files
+coverage/
+
+# Other session / temp files
+tmp/
