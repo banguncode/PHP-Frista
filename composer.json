@@ -3,7 +3,7 @@
     "description": "A simple PHP library for BPJS Kesehatan facial recognition integration.",
     "type": "library",
     "license": "MIT",
-    "keywords": ["facial recognition", "frista", "bridging BPJS"],
+    "keywords": ["facial recognition", "frista", "bridging", "bpjs"],
     "authors": [
         {
             "name": "Rum Haidar Fauzan",
