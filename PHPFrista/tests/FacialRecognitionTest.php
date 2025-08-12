@@ -14,8 +14,15 @@ try {
 
     /** NIK / BPJS no */
     $id = "1234567890000000";
-    $encoding = [0.123, 0.456];
-    $file = __DIR__ . '/path/to/face.jpg';
+    $encoding = [
+        -0.16429905593395233,
+        0.18262381851673126,
+        0.07881429046392441,
+        // 125 more float values as descriptors
+    ];
+
+    // For testing, you can use a placeholder array of 128 zeros:
+    // $encoding = array_fill(0, 128, 0.0);
 
     $matchResult = $frista->verify($id, $encoding);
 
@@ -26,8 +33,9 @@ try {
             break;
 
         case StatusCode::UNREGISTERED:
-            $uploadResult = $frista->register($id, $file);
-            echo "Register: " . $uploadResult['message'] . "\n";
+            // $file = __DIR__ . '/path/to/face.jpg';
+            // $uploadResult = $frista->register($id, $file);
+            // echo "Register: " . $uploadResult['message'] . "\n";
             break;
 
         default:
