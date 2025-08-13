@@ -23,7 +23,7 @@ class FacialRecognition
      * @param string $password
      * @return $this
      */
-    public function init(string $username, string $password)
+    public function init($username, $password)
     {
         $this->username = $username;
         $this->password = $password;
@@ -31,13 +31,13 @@ class FacialRecognition
         return $this;
     }
 
-    public function setBaseUrl(string $baseUrl)
+    public function setBaseUrl($baseUrl)
     {
         $this->baseUrl = preg_replace('/\/+$/', '', $baseUrl);
         return $this;
     }
 
-    public function setVersion(string $version)
+    public function setVersion($version)
     {
         $this->version = $version;
         return $this;
@@ -82,7 +82,7 @@ class FacialRecognition
      * @param array $encoding Face encoding data (must be 128 decimal numbers)
      * @return array Verification result or error message
      */
-    public function verify(string $id, array $encoding)
+    public function verify($id, $encoding)
     {
         if (!$this->token)
             return array(
@@ -176,7 +176,7 @@ class FacialRecognition
      * @param bool $isFile True if $file is a file path, false if base64 string
      * @return array
      */
-    public function register(string $id, string $file, bool $isFile = true)
+    public function register($id,  $file,  $isFile = true)
     {
         if (!$this->token)
             return array(
