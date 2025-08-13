@@ -1,21 +1,28 @@
 {
-    "name": "banguncode/php-frista",
-    "description": "A simple PHP library for BPJS Kesehatan facial recognition integration.",
-    "type": "library",
-    "license": "MIT",
-    "keywords": ["facial recognition", "frista", "bridging", "bpjs"],
-    "authors": [
-        {
-            "name": "Rum Haidar Fauzan",
-            "email": "rum.haidar@hotmail.com"
-        }
-    ],
-    "require": {
-        "php": ">=5.5"
-    },
-    "autoload": {
-        "psr-4": {
-            "PHPFrista\\": "src/"
-        }
+  "name": "banguncode/php-frista",
+  "description": "A simple PHP library for BPJS Kesehatan facial recognition integration.",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "facial recognition",
+    "frista",
+    "bridging",
+    "bpjs"
+  ],
+  "authors": [
+    {
+      "name": "Rum Haidar Fauzan",
+      "email": "rum.haidar@hotmail.com"
     }
+  ],
+  "require": {
+    "php": ">=5.5",
+    "ext-curl": "*",
+    "ext-openssl": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "PHPFrista\\": "src/"
+    }
+  }
 }
